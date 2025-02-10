@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ID2wkOeSEe-5yJoyPC6Low" name="gestion de location">
+  <eAnnotations xmi:id="_ID2wkeeSEe-5yJoyPC6Low" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_ID2wkueSEe-5yJoyPC6Low" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ID2wk-eSEe-5yJoyPC6Low" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wlOeSEe-5yJoyPC6Low" name="Gestionnaire">
+    <ownedAttribute xmi:id="_ID2wleeSEe-5yJoyPC6Low" name="residence" visibility="public" type="_ID2wpueSEe-5yJoyPC6Low" isUnique="false" association="_ID2wl-eSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wlueSEe-5yJoyPC6Low" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wl-eSEe-5yJoyPC6Low" memberEnd="_ID2wleeSEe-5yJoyPC6Low _ID2wmOeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wmOeSEe-5yJoyPC6Low" visibility="public" type="_ID2wlOeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wl-eSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wmeeSEe-5yJoyPC6Low" name="Utilisateur">
+    <generalization xmi:id="_ID2wmueSEe-5yJoyPC6Low" general="_ID2wlOeSEe-5yJoyPC6Low"/>
+    <ownedAttribute xmi:id="_ID2wm-eSEe-5yJoyPC6Low" name="avis" visibility="public" type="_ID2w0OeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wneeSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wnOeSEe-5yJoyPC6Low" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wneeSEe-5yJoyPC6Low" memberEnd="_ID2wm-eSEe-5yJoyPC6Low _ID2wnueSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wnueSEe-5yJoyPC6Low" visibility="public" type="_ID2wmeeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wneeSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wn-eSEe-5yJoyPC6Low" memberEnd="_ID2woOeSEe-5yJoyPC6Low _ID2woueSEe-5yJoyPC6Low _ID2wpOeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2woOeSEe-5yJoyPC6Low" visibility="public" type="_ID2wmeeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wn-eSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2woeeSEe-5yJoyPC6Low"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_ID2woueSEe-5yJoyPC6Low" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wn-eSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2wo-eSEe-5yJoyPC6Low"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_ID2wpOeSEe-5yJoyPC6Low" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wn-eSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2wpeeSEe-5yJoyPC6Low"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wpueSEe-5yJoyPC6Low" name="Residence">
+    <ownedAttribute xmi:id="_ID2wp-eSEe-5yJoyPC6Low" name="element" visibility="public" type="_ID2wrOeSEe-5yJoyPC6Low" isUnique="false" aggregation="shared" association="_ID2wqeeSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2wqOeSEe-5yJoyPC6Low"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wqeeSEe-5yJoyPC6Low" memberEnd="_ID2wp-eSEe-5yJoyPC6Low _ID2wqueSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wqueSEe-5yJoyPC6Low" visibility="public" type="_ID2wpueSEe-5yJoyPC6Low" isUnique="false" association="_ID2wqeeSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2wq-eSEe-5yJoyPC6Low"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wrOeSEe-5yJoyPC6Low" name="Element">
+    <ownedAttribute xmi:id="_ID2wreeSEe-5yJoyPC6Low" name="disponibilite" visibility="public" type="_ID2w3eeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wt-eSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wrueSEe-5yJoyPC6Low" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ID2wr-eSEe-5yJoyPC6Low" name="materiel" visibility="public" type="_ID2wzeeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wueeSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wsOeSEe-5yJoyPC6Low" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ID2wseeSEe-5yJoyPC6Low" name="prestation" visibility="public" type="_ID2wz-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wu-eSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wsueSEe-5yJoyPC6Low" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2ws-eSEe-5yJoyPC6Low"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ID2wtOeSEe-5yJoyPC6Low" name="contrainte" visibility="public" type="_ID2w4-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wveeSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wteeSEe-5yJoyPC6Low" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2wtueSEe-5yJoyPC6Low"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wt-eSEe-5yJoyPC6Low" memberEnd="_ID2wreeSEe-5yJoyPC6Low _ID2wuOeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wuOeSEe-5yJoyPC6Low" visibility="public" type="_ID2wrOeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wt-eSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wueeSEe-5yJoyPC6Low" memberEnd="_ID2wr-eSEe-5yJoyPC6Low _ID2wuueSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wuueSEe-5yJoyPC6Low" visibility="public" type="_ID2wrOeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wueeSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wu-eSEe-5yJoyPC6Low" memberEnd="_ID2wseeSEe-5yJoyPC6Low _ID2wvOeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wvOeSEe-5yJoyPC6Low" visibility="public" type="_ID2wrOeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wu-eSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wveeSEe-5yJoyPC6Low" memberEnd="_ID2wtOeSEe-5yJoyPC6Low _ID2wvueSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wvueSEe-5yJoyPC6Low" visibility="public" type="_ID2wrOeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wveeSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wv-eSEe-5yJoyPC6Low" name="Reservation">
+    <ownedAttribute xmi:id="_ID2wwOeSEe-5yJoyPC6Low" name="prestation" visibility="public" type="_ID2wz-eSEe-5yJoyPC6Low" isUnique="false" aggregation="composite" association="_ID2wxueSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2wweeSEe-5yJoyPC6Low"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ID2wwueSEe-5yJoyPC6Low" name="paiement" visibility="public" type="_ID2wzueSEe-5yJoyPC6Low" isUnique="false" aggregation="composite" association="_ID2wyOeSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2ww-eSEe-5yJoyPC6Low"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ID2wxOeSEe-5yJoyPC6Low" name="materiel" visibility="public" type="_ID2wzeeSEe-5yJoyPC6Low" isUnique="false" association="_ID2wyueSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wxeeSEe-5yJoyPC6Low" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wxueSEe-5yJoyPC6Low" memberEnd="_ID2wwOeSEe-5yJoyPC6Low _ID2wx-eSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wx-eSEe-5yJoyPC6Low" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wxueSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wyOeSEe-5yJoyPC6Low" memberEnd="_ID2wwueSEe-5yJoyPC6Low _ID2wyeeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wyeeSEe-5yJoyPC6Low" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wyOeSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2wyueSEe-5yJoyPC6Low" memberEnd="_ID2wxOeSEe-5yJoyPC6Low _ID2wy-eSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2wy-eSEe-5yJoyPC6Low" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2wyueSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2wzOeSEe-5yJoyPC6Low" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wzeeSEe-5yJoyPC6Low" name="Materiel"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wzueSEe-5yJoyPC6Low" name="Paiement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2wz-eSEe-5yJoyPC6Low" name="Prestation"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2w0OeSEe-5yJoyPC6Low" name="Avis">
+    <ownedAttribute xmi:id="_ID2w0eeSEe-5yJoyPC6Low" name="reservation" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2w0ueSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2w0ueSEe-5yJoyPC6Low" memberEnd="_ID2w0eeSEe-5yJoyPC6Low _ID2w0-eSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2w0-eSEe-5yJoyPC6Low" visibility="public" type="_ID2w0OeSEe-5yJoyPC6Low" isUnique="false" association="_ID2w0ueSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2w1OeSEe-5yJoyPC6Low"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2w1eeSEe-5yJoyPC6Low" name="Communication">
+    <ownedAttribute xmi:id="_ID2w1ueSEe-5yJoyPC6Low" name="utilisateur" visibility="public" type="_ID2wmeeSEe-5yJoyPC6Low" isUnique="false" association="_ID2w2eeSEe-5yJoyPC6Low"/>
+    <ownedAttribute xmi:id="_ID2w1-eSEe-5yJoyPC6Low" name="reservation" visibility="public" type="_ID2wv-eSEe-5yJoyPC6Low" isUnique="false" association="_ID2w2-eSEe-5yJoyPC6Low">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ID2w2OeSEe-5yJoyPC6Low"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2w2eeSEe-5yJoyPC6Low" memberEnd="_ID2w1ueSEe-5yJoyPC6Low _ID2w2ueSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2w2ueSEe-5yJoyPC6Low" visibility="public" type="_ID2w1eeSEe-5yJoyPC6Low" isUnique="false" association="_ID2w2eeSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2w2-eSEe-5yJoyPC6Low" memberEnd="_ID2w1-eSEe-5yJoyPC6Low _ID2w3OeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2w3OeSEe-5yJoyPC6Low" visibility="public" type="_ID2w1eeSEe-5yJoyPC6Low" isUnique="false" association="_ID2w2-eSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2w3eeSEe-5yJoyPC6Low" name="Disponibilite"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2w3ueSEe-5yJoyPC6Low" name="Tarif">
+    <ownedAttribute xmi:id="_ID2w3-eSEe-5yJoyPC6Low" name="element" visibility="public" type="_ID2wrOeSEe-5yJoyPC6Low" isUnique="false" association="_ID2w4OeSEe-5yJoyPC6Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ID2w4OeSEe-5yJoyPC6Low" memberEnd="_ID2w3-eSEe-5yJoyPC6Low _ID2w4eeSEe-5yJoyPC6Low">
+    <ownedEnd xmi:id="_ID2w4eeSEe-5yJoyPC6Low" visibility="public" type="_ID2w3ueSEe-5yJoyPC6Low" isUnique="false" association="_ID2w4OeSEe-5yJoyPC6Low">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ID2w4ueSEe-5yJoyPC6Low" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ID2w4-eSEe-5yJoyPC6Low" name="Contrainte"/>
+</uml:Model>
